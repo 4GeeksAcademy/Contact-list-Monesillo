@@ -1,0 +1,75 @@
+/* Container for the form */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form title */
+form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input fields */
+form input[type="text"],
+form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Save and Cancel buttons */
+form button[type="submit"],
+form button[type="button"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Save button style */
+form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Cancel button style */
+form button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+form button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+/* Additional styling */
+form button[type="submit"],
+form button[type="button"] {
+    width: 100%;
+    margin-top: 10px;
+}
